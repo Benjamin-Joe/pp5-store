@@ -4,6 +4,7 @@ Django
 Django-Allauth
 
 # Target Audience 
+
 The products on this website are mainly aimed at the following:  
 Creative/Artistic people  
 People buying gifts for a loved one  
