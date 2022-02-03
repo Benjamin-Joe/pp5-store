@@ -13,3 +13,22 @@
     font-family: 'Source Serif 4', sans-serif;
 }
 
+.navborder {
+    border-bottom: 1px solid black;
+}
+
+.nav-2-display {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.nav-2-item {
+    display: block;
+}
+
+.nav-2-title {
+    color: rgba(0,0,0,.5);
+}

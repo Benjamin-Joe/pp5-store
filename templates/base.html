@@ -29,7 +29,7 @@
   </head>
   <body>
     <header class=" fixed-top head">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navborder">
           <a class="navbar-brand" href="{% url 'home' %}">Klarart</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,13 +39,6 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#">Store</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Categories
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                </div>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -78,9 +71,39 @@
               </a>   
           </div>
         </nav>
+        <nav class="navbar navbar-light bg-light">
+          <div class="nav-2-display">
+            <li class="nav-item dropdown nav-2-item">
+              <a class="nav-link dropdown-toggle nav-2-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              </div>
+            </li>
+            <li class="nav-item dropdown nav-2-item">
+              <a class="nav-link dropdown-toggle nav-2-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Deals
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              </div>
+            </li>
+            <li class="nav-item dropdown nav-2-item">
+              <a class="nav-link dropdown-toggle nav-2-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Price
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              </div>
+            </li>
+            <li class="nav-item dropdown nav-2-item">
+              <a class="nav-link dropdown-toggle nav-2-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Rating
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              </div>
+            </li>
+          </div>
+        </nav>
   </header>
-  <div class="background-image-main">
-
     {% if messages %}
     <div class="message-container"></div>
     {% endif %}
