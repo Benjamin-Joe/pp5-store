@@ -20,4 +20,4 @@ Underneath the main navbar is a second bar for sorting products via category, pr
 ![ Navbar ](/media/readme/navbar-2.png)  
 
 Line 75-79 of base.html code taken from Code Institute's Boutique Ado  
-Line 41-43 of base.css code taken from Code Institute's Boutique Ago
+Line 41-43 of base.css code taken from Code Institute's Boutique Ado
