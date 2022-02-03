@@ -19,3 +19,5 @@ The navigation bar came straight from the bootstrap documentation and was adapte
 Underneath the main navbar is a second bar for sorting products via category, price, rating and deals. By having this seperate to the main navigation bar I feel it improves user experience and creates a higher chance that users will engage with it's features  
 ![ Navbar ](/media/readme/navbar-2.png)  
 
+Line 75-79 of base.html code taken from Code Institute's Boutique Ado  
+Line 41-43 of base.css code taken from Code Institute's Boutique Ago

@@ -32,3 +32,13 @@
 .nav-2-title {
     color: rgba(0,0,0,.5);
 }
+
+.nav-2-title:hover {
+    color: black;
+}
+
+/* Code Taken */
+.bg-black {
+    background: #000 !important;
+}
+/* End Of Taken Code */
