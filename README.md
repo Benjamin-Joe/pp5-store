@@ -2,6 +2,8 @@
 
 Django  
 Django-Allauth
+Coverage
+Pillow
 
 # Target Audience 
 The products on this website are mainly aimed at the following:  
