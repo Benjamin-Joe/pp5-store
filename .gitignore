@@ -9,3 +9,8 @@ node_modules/
 cloudinary_python.txt
 *.sqlite3
 *.pyc
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
