@@ -6,7 +6,7 @@
 }
 
 .space-container{
-    margin-top: 180px;
+    margin-top: 160px;
 }
 
 /*Navigation Bar ----------------------*/
@@ -19,6 +19,7 @@
     font-weight: bold;
 }
 
+h1, h2, h3, h4, h5, h6,
 .dilevery-font,
 .navbar {
     font-weight: bold;
@@ -57,12 +58,18 @@
 
 /* Product Page --------------------- */
 
-
-
-.card-text {
-    height: 100px;
+.card-title,
+.card-price,
+.card-cat,
+.card-rating {
+    color: black;
 }
 
-.detail-btn {
-    width: 80%;
+.card-title {
+    font-weight: bold;
 }
+
+.card-rating {
+    text-align: center;
+}
+
