@@ -5,11 +5,10 @@
   <h1 class="text-center">Store</h1>
   <div class="row">
       <div class="product-container col-10 offset-1">
-          <div class="row mt-1 mb-2"></div>
           <div class="row">
-              {% for product in products %}
+              {% for product in all_products %}
                   <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                      <div class="card h-100 product-display">
+                      <div class="card product-display">
                           <a class="product-link" href="#">
                               <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
 
@@ -23,9 +22,9 @@
                                           <p class="card-rating"><small class="text-muted"><i class="fas fa-medal mr-1"></i>{{ product.rating }} / 5</small></p>
                                       {% else %}
                                           <p class="card-rating"><small class="text-muted">No Rating</small></p>
-
                                       {% endif %}
                                   </a>
+                                  <button class="btn btn-secondary view-btn">View Product</button>
                                   </div>
                               </div>
                           </div>
@@ -56,4 +55,15 @@
       </div>
   </div>
 </div>
+<hr>
+{% if all_products.has_previous %}
+<a href="?page=1">&laquo;</a>
+<a href="?page={{ all_products.previous_page_number }}">Previous</a>
+{% endif %}
+{{ all_products }}
+{% if all_products.has_next %}
+<a href="?page={{ all_products.next_page_number }}">Next</a>
+<a href="?page={{ all_products.paginator.num_pages }}">Last &raquo;</a>
+{% endif %}
+
 {% endblock %}

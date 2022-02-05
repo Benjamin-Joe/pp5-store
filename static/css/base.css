@@ -6,7 +6,7 @@
 }
 
 .space-container{
-    margin-top: 160px;
+    margin-top: 140px;
 }
 
 /*Navigation Bar ----------------------*/
@@ -58,6 +58,18 @@ h1, h2, h3, h4, h5, h6,
 
 /* Product Page --------------------- */
 
+.product-link:hover {
+    text-decoration: none;
+}
+
+.product-display {
+    border: 1px solid black;
+}
+
+.product-display:hover {
+    border: 3px solid black;
+}
+
 .card-title,
 .card-price,
 .card-cat,
@@ -65,11 +77,17 @@ h1, h2, h3, h4, h5, h6,
     color: black;
 }
 
+
 .card-title {
     font-weight: bold;
 }
 
 .card-rating {
     text-align: center;
+}
+
+.view-btn {
+    margin: auto;
+    width: 100%;
 }
 
