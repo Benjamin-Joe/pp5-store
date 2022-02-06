@@ -3,7 +3,16 @@ from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.core.paginator import Paginator
 from django.db.models import Q
 from django.views.generic import ListView
-from .models import Product
+from .models import Product, Category
+
+
+def category_list(request):
+    "Category dropdown view"
+    category_list = Category.objects.all()
+    context = {
+        'category_list': category_list,
+    }
+    return context
 
 
 class CategoryList(ListView):

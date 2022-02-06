@@ -5,7 +5,10 @@
           Categories
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        </div>
+        {% for category in category_list %}
+        <a href="/products/category/{{category.name}}" class="dropdown-item">{{ category.name|title }}</a>
+        {% endfor %}
+      </div>
       </li>
       <li class="nav-item dropdown nav-2-item">
         <a class="nav-link dropdown-toggle nav-2-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
