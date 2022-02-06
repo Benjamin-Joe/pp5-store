@@ -96,6 +96,25 @@ h1, h2, h3, h4, h5, h6,
     margin: auto;
 }
 
+.view-product-btn {
+    color: white;
+    font-weight: bold;
+}
+
+.view-product-btn:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.product-img {
+    padding-top: 10px;
+    margin: auto;
+    height: 180px;
+    width: 190px;
+    display: block;
+}
+
 /* Product Detail Page ------------------------ */
 
 .product-details-container {
