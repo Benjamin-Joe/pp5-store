@@ -2,7 +2,24 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.core.paginator import Paginator
 from django.db.models import Q
+from django.views.generic import ListView
 from .models import Product
+
+
+class CategoryList(ListView):
+    "Category dropdown view"
+    template_name = 'products/category.html'
+    context_object_name = 'catlist'
+
+    def get_queryset(self):
+        context = {
+            'cat': self.kwargs['category'],
+            'products': Product.objects.filter(
+                category__name=self.kwargs['category']
+                )
+            }
+        return context
+
 
 def store(request):
     "View to return the all products shopping area"
@@ -27,6 +44,7 @@ def store(request):
         'search_term': query,
     }
     return render(request, 'products/store.html', context)
+
 
 # Code below came from Code Institute
 def product_detail(request, product_id):

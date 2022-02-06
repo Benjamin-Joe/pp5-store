@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6,
 }
 /* End Of Taken Code */
 
-/* Product Page --------------------- */
+/* Product Page / Category Page --------------------- */
 
 .product-link:hover {
     text-decoration: none;
@@ -77,7 +77,6 @@ h1, h2, h3, h4, h5, h6,
 .card-rating {
     color: black;
 }
-
 
 .card-title {
     font-weight: bold;
