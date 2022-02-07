@@ -15,6 +15,7 @@
         <div class="col">
             {% if bag_items %}
             <div class="table-responsive rounded">
+                {{ bag_items }}
                 <table class="table table-sm">
                     <thead class="text-black">
                         <tr>
@@ -38,7 +39,7 @@
                             <p>{{ item.product.price }}</p>
                         </td>
                         <td class="py-3">
-                            <p></p>
+                            <p>{{ item.quantity }}</p>
                         </td>
                         <td class="py-3">
                             <p>{{ item.product.price }}</p>
