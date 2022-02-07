@@ -33,3 +33,4 @@ Line 75-79 of base.html code taken from Code Institute's Boutique Ado
 Line 41-43 of base.css code taken from Code Institute's Boutique Ado
 Line 19-25 of views.py in products app taken from Code Institute's Boutique Ado
 Line 5-30 of contexts.py in products app taken from Code Institute's Boutique Ago
+Line 10-23 in views.py in bag app taken from Code Institute's Boutique Ado
