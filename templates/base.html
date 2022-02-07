@@ -60,7 +60,7 @@
               <input class="form-control mr-sm-2" required type="text" name="q" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0 nav-search" type="submit">Search</button>
             </form>
-            <a href="#" class="pl-2" type="button" role="button">
+            <a href="{% url 'bag' %}" class="pl-2" type="button" role="button">
               {% if total %}
                 £{{total|floatformat:2}}
               {% else %}

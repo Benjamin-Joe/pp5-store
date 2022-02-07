@@ -42,7 +42,7 @@ def store(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                return redirect(reverse('products'))
+                return redirect(reverse('store'))
 
             queries = Q(title__icontains=query) | Q(description__icontains=query)
             all_products = products.filter(queries)
